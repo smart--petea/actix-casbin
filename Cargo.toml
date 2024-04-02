@@ -22,6 +22,8 @@ futures = "0.3.21"
 
 [features]
 default = ["runtime-async-std"]
+explain = ["casbin/explain"]
+logging = ["casbin/logging"]
 
 runtime-tokio = ["casbin/runtime-tokio", "tokio/sync", "actix-casbin-auth/runtime-tokio"]
 runtime-async-std = ["casbin/runtime-async-std", "async-std/std", "actix-casbin-auth/runtime-async-std"]
